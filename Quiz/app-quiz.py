@@ -6,7 +6,7 @@ question_prompts = [
     "Whats color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
 ]
 
-questions = [
+right_questions = [
     Question(question_prompts[0], "a"),
     Question(question_prompts[1], "c"),
     Question(question_prompts[2], "b"),
@@ -20,4 +20,4 @@ def run_test(questions):
             score += 1
     print("You got " + str(score) + "/" + str(len(questions)) + " correct")
 
-run_test(questions)
+run_test(right_questions)
